@@ -12,6 +12,12 @@
         android:theme="@style/Theme.KidSafe"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpParentActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentActivity"
             android:exported="false" />
         <activity

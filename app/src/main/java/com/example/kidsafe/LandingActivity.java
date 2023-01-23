@@ -20,7 +20,15 @@ public class LandingActivity extends AppCompatActivity {
 
         Button join = findViewById(R.id.materialButton);
 
+        Button joinParent = findViewById(R.id.materialButton2);
+
+        Button joinTeacher = findViewById(R.id.materialButton3);
+
         join.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, SignUpActivity.class)));
+
+        joinParent.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, SignUpParentActivity.class)));
+
+        joinTeacher.setOnClickListener(view -> startActivity(new Intent(LandingActivity.this, SignUpTeacherActivity.class)));
 
         Button login = findViewById(R.id.materialButton1);
 

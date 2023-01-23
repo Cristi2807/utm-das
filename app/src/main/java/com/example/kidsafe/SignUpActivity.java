@@ -27,13 +27,11 @@ public class SignUpActivity extends AppCompatActivity {
     TextInputEditText etSignUpPass;
     TextInputLayout SignUpPass;
 
-    Spinner spinner;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Sign Up");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Sign Up as Student");
 
         etSignUpID = findViewById(R.id.textInputEditText);
         SignUpID = findViewById(R.id.textInputLayout);
@@ -92,16 +90,6 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
         });
-
-
-        spinner = findViewById(R.id.spinner);
-
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.Role, android.R.layout.simple_spinner_item);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinner.setAdapter(adapter);
 
         MaterialButton signUpButton = findViewById(R.id.materialButton1);
 
