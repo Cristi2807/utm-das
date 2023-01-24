@@ -49,12 +49,11 @@
             android:layout_marginStart="48dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="48dp"
-            android:hint="Parent ID Number"
+            android:hint="Full Parent Name"
             app:boxCornerRadiusBottomEnd="25dp"
             app:boxCornerRadiusBottomStart="25dp"
             app:boxCornerRadiusTopEnd="25dp"
             app:boxCornerRadiusTopStart="25dp"
-            app:counterMaxLength="13"
             app:endIconMode="clear_text"
             app:errorIconDrawable="@drawable/baseline_error_outline_24"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,8 +65,7 @@
                 android:id="@+id/textInputEditText9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:maxLength="13" />
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
